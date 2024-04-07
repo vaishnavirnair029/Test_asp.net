@@ -1,0 +1,37 @@
+﻿@model Demo.Models.LoginViewModel
+
+<h4>Login</h4>
+<hr />
+<div class="container_login">
+<div class="row" style="justify-content:center">
+    <div class="col-md-4" style="padding:5px;">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-controls" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="password" class="control-label"></label>
+                <input asp-for="password" class="form-controls" />
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+                <div class=""><span class="new">New Applicant? <a href="Register">Register</a></span></div>
+            <div class="btn">
+                <input type="submit" value="Login" class="btn btn-primary" style="width:144px;"/>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

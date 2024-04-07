@@ -1,0 +1,41 @@
+﻿body {
+}
+h4 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h3
+{
+    font-size:small;
+
+}
+.btn {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    
+}
+h5{
+    font-size:small;
+}
+.container_login {
+    background-color: #f7f7f5;
+    margin-left: 13%;
+    margin-right: 30%;
+    box-shadow: rgba(240, 240, 240, 0.84) 5px 5px 10px;
+    border-radius: 19px;
+}
+form-controls {
+   
+}
